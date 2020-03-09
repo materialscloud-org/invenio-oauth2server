@@ -11,8 +11,10 @@
 {# FIXME Import from future formatter. #}
 {%- from "invenio_oauth2server/settings/_macros.html" import render_field with context%}
 {%- import "invenio_oauth2server/settings/helpers.html" as helpers with context %}
-
 {% block settings_content %}
+This section is disabled
+{% endblock %}
+{#% block settings_content %}
 {{helpers.panel_start(
     _('Developer Applications'),
     btn=_('New application'),
@@ -85,4 +87,4 @@
 </div>
 {% endif %}
 {{helpers.panel_end(with_body=False)}}
-{% endblock %}
+{% endblock %#}
